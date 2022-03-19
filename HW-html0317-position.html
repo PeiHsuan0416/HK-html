@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/projects/02-HTML+CSS/normailize.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .section{
+            width: 960px;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-bottom: 80px;
+            /* background-color: aqua; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .section:nth-child(2), .section:nth-child(4){
+            flex-direction: row-reverse;
+            /* background-color: aqua; */
+        }
+        .backbox{
+            width: 500px;
+            height: 380px;
+            background-color: #ccf;
+            margin-top: 40px;
+        }
+        .caption{
+            width: 350px;
+            background-color: red;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .captionNumber{
+            font-size: 100px;
+        }
+        .captionTitle{
+            font-size: 50px;
+            align-self: center;
+        }
+        .items{
+            position: relative;
+            display: flex;
+        }
+        .item{
+            width: 350px;
+            background-color: black;
+            color: white;
+            box-sizing: border-box;
+            padding: 20px;
+            z-index: 3;
+        }
+        .itemSolgan{
+            font-size: 20px;
+        }
+        .itemPic{
+            width: 635px;
+            width: 635px;
+            display: flex;
+            position: absolute;
+            top: 0px;
+            left: 150px;
+        }
+        .itemPic24{
+            width: 635px;
+            width: 635px;
+            display: flex;
+            position: absolute;
+            top: 0px;
+            right: 150px;
+        }
+        .itemPic img{
+            width: 100%;
+        }
+        .itemPic24 img{
+            width: 100%;
+        }
+        .ytbtn{
+            width: 50px;
+            height: 30px;
+            background-color: red;
+            margin-left: -50px;
+            align-self: center;
+            display: flex;
+            justify-content: flex-end;
+            padding: 5px;
+        }
+        .ytbtn::after{
+            content: "";
+            border-top: 15px solid red;
+            border-left: 15px solid white;
+            border-bottom: 15px solid red;
+            border-right: 15px solid red;
+            display: inline-block;
+            position: absolute;
+            border-radius: 3px;
+        }
+        .ytbtn24{
+            width: 50px;
+            height: 30px;
+            background-color: red;
+            display: flex;
+            padding: 5px;
+        }
+        .lists{
+            background-color: #ccc;
+            width: 600px;
+            box-sizing: border-box;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+            margin-left: 50px;
+        }
+        .listCaption{
+            color: brown;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .listCaption::after{
+            content: "";
+            display: inline-block;
+            width: 50%;
+            height: 2px;
+            background:brown;
+            margin-left: 10px;
+        }
+        .listTitle{
+            background-color: black;
+            color: white;
+            display: inline-block;
+            padding: 3px;
+            border-radius: 3px;
+        }
+        .list{
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .list::before{
+            content: "";
+            width: 2px;
+            height: 2px;
+            background-color:red;
+            display: inline-block;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <article class="section">
+        <div class="captionItems">
+            <div class="caption">
+                <h2 class="captionNumber">01</h2>
+                <h2 class="captionTitle">操控樂趣</h2>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <h3 class="itemSolgan">人人滿意的駕駛體驗</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium odio saepe facere nobis unde corrupti, illum sed aut distinctio sunt! Voluptates velit iste labore blanditiis illum ut quaerat magnam quo.</p>
+                </div>
+                <div class="itemPic">
+                    <img src="https://picsum.photos/300/200/?random=10">
+                    <div class="ytbtn"></div>
+                </div>
+            </div>
+        </div>
+        <div class="backbox"></div>
+        <div class="lists">
+            <h3 class="listCaption">因為我們做了些革新</h3>
+            <h4 class="listTitle">低重心設計</h4>
+            <p class="list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illum, debitis</p>
+            <h4 class="listTitle">低重心設計</h4>
+            <p class="list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illum, debitis</p>
+            <h4 class="listTitle">低重心設計</h4>
+            <p class="list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illum, debitis</p>
+        </div>
+    </article>
+    
+    <article class="section">
+        <div class="captionItems">
+            <div class="caption">
+                <h2 class="captionNumber">01</h2>
+                <h2 class="captionTitle">操控樂趣</h2>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <h3 class="itemSolgan">人人滿意的駕駛體驗</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium odio saepe facere nobis unde corrupti, illum sed aut distinctio sunt! Voluptates velit iste labore blanditiis illum ut quaerat magnam quo.</p>
+                </div>
+                <div class="itemPic24">
+                    <img src="https://picsum.photos/300/200/?random=10">
+                    <div class="ytbtn24"></div>
+                </div>
+            </div>
+        </div>
+        <div class="backbox"></div>
+        <div class="lists">
+            <h3 class="listCaption">因為我們做了些革新</h3>
+            <h4 class="listTitle">低重心設計</h4>
+            <p class="list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illum, debitis</p>
+            <h4 class="listTitle">低重心設計</h4>
+            <p class="list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illum, debitis</p>
+            <h4 class="listTitle">低重心設計</h4>
+            <p class="list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illum, debitis</p>
+        </div>
+    </article>
+    
+    <article class="section">
+        <div class="captionItems">
+            <div class="caption">
+                <h2 class="captionNumber">01</h2>
+                <h2 class="captionTitle">操控樂趣</h2>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <h3 class="itemSolgan">人人滿意的駕駛體驗</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium odio saepe facere nobis unde corrupti, illum sed aut distinctio sunt! Voluptates velit iste labore blanditiis illum ut quaerat magnam quo.</p>
+                </div>
+                <div class="itemPic">
+                    <img src="https://picsum.photos/300/200/?random=10">
+                    <div class="ytbtn"></div>
+                </div>
+            </div>
+        </div>
+        <div class="backbox"></div>
+        <div class="lists">
+            <h3 class="listCaption">因為我們做了些革新</h3>
+            <h4 class="listTitle">低重心設計</h4>
+            <p class="list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illum, debitis</p>
+            <h4 class="listTitle">低重心設計</h4>
+            <p class="list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illum, debitis</p>
+            <h4 class="listTitle">低重心設計</h4>
+            <p class="list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illum, debitis</p>
+        </div>
+    </article>
+    
+    
+    <article class="section">
+        <div class="captionItems">
+            <div class="caption">
+                <h2 class="captionNumber">01</h2>
+                <h2 class="captionTitle">操控樂趣</h2>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <h3 class="itemSolgan">人人滿意的駕駛體驗</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium odio saepe facere nobis unde corrupti, illum sed aut distinctio sunt! Voluptates velit iste labore blanditiis illum ut quaerat magnam quo.</p>
+                </div>
+                <div class="itemPic24">
+                    <img src="https://picsum.photos/300/200/?random=10">
+                    <div class="ytbtn24"></div>
+                </div>
+            </div>
+        </div>
+        <div class="backbox"></div>
+        <div class="lists">
+            <h3 class="listCaption">因為我們做了些革新</h3>
+            <h4 class="listTitle">低重心設計</h4>
+            <p class="list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illum, debitis</p>
+            <h4 class="listTitle">低重心設計</h4>
+            <p class="list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illum, debitis</p>
+            <h4 class="listTitle">低重心設計</h4>
+            <p class="list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illum, debitis</p>
+        </div>
+    </article>
+</body>
+</html>
