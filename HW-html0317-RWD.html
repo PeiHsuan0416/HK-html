@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .teacherIntro {
+        max-width: 90%;
+        margin: auto;
+        /* background-color: antiquewhite; */
+      }
+      .teacherIntro p {
+        margin-bottom: 20px;
+      }
+      .teacherItems {
+        /* display: flex;
+        flex-wrap: wrap; */
+        margin: auto;
+        /* background-color: aqua; */
+      }
+      .teacherTitle {
+        font-size: 25px;
+      }
+      .teacherTitle::after {
+        content: " ";
+        width: 50px;
+        height: 2px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background-color: red;
+        display: block;
+      }
+      .teacherList {
+        width: 650px;
+        box-sizing: border-box;
+        padding: 20px;
+        box-shadow: 3px 3px 12px #ddd;
+        /* background-color: aqua; */
+      }
+      .teacher {
+        display: block;
+        justify-content: center;
+        /* background-color: blanchedalmond; */
+      }
+      .teacherPhoto {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      .teacherPhoto img {
+        width: 200px;
+        height: 200px;
+      }
+      .teacherNode {
+        box-sizing: border-box;
+        width: 90%;
+        margin: auto;
+      }
+      .teacherClass {
+        box-sizing: border-box;
+        padding-top: 20px;
+        text-align: center;
+      }
+      .teacherClass::after {
+        content: " ";
+        width: 30px;
+        height: 2px;
+        background-color: red;
+        display: block;
+        margin: auto;
+        margin-top: 5px;
+      }
+      .teacherName {
+        box-sizing: border-box;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .teacherWeb {
+        box-sizing: border-box;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .teacherWeb a {
+        margin: 10px;
+      }
+      .aboutTeacher {
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      .aboutTeacher::before {
+        content: "";
+        display: block;
+        flex-grow: 1;
+        height: 1px;
+        background: #ddd;
+        margin-bottom: 20px;
+      }
+      .aboutPoint {
+        color: red;
+      }
+      .otherClass {
+        color: #aaa;
+        display: flex;
+        align-items: center;
+      }
+      .otherClass::after {
+        content: " ";
+        display: inline-block;
+        flex-grow: 1;
+        height: 1px;
+        background: #ddd;
+        margin-left: 20px;
+      }
+      .classWeb {
+        margin-top: 20px;
+      }
+      .classWeb a {
+        border: 1.5px solid red;
+        border-radius: 3px;
+        color: red;
+        padding: 5px;
+        margin-right: 10px;
+      }
+      /* @media screen and (min-width: 790px) {
+        .teacherIntro {
+          width: 650px;
+        }
+        .teacherPhoto {
+          display: inline-block;
+        }
+        .teacher {
+          display: flex;
+          align-items: center;
+        }
+        .teacherNode {
+          width: 200px;
+          margin-left: -20px;
+          display: inline-block;
+        }
+        .teacherClass {
+          width: 200px;
+          display: flex;
+          align-items: flex-start;
+          position: relative;
+        }
+        .teacherClass::after {
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+        }
+        .teacherName {
+          width: 200px;
+          display: flex;
+          margin-top: 20px;
+        }
+        .teacherWeb {
+          width: 200px;
+          display: flex;
+          margin-top: 10px;
+          margin-left: -10px;
+        }
+        @media screen and (min-width: 1030px) {
+          .teachers {
+            width: 100%;
+            margin: 0;
+          }
+          .teacherItems {
+            margin: 10px;
+            justify-content: flex-start;
+          }
+        } */
+      }
+    </style>
+  </head>
+  <body>
+    <section class="teachers">
+      <div class="teacherIntro">
+        <h2 class="teacherTitle">講師陣容</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+          recusandae quam atque unde dolores sapiente ea corporis facilis.
+          Soluta animi, porro labore nam aperiam delectus vitae necessitatibus
+          iste placeat impedit.
+        </p>
+      </div>
+      <div class="teacherItems">
+        <article class="teacherList">
+          <div class="teacher">
+            <div class="teacherPhoto">
+              <img src="https://picsum.photos/100/200/?random=10" />
+            </div>
+            <div class="teacherNode">
+              <h3 class="teacherClass">HTML/CSS講師</h3>
+              <h2 class="teacherName">李建杭(Amos Lee)</h2>
+              <nav class="teacherWeb">
+                <a href="#">icon</a>
+                <a href="#">icon</a>
+                <a href="#">icon</a>
+              </nav>
+            </div>
+          </div>
+          <p class="aboutTeacher">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem qui
+            dignissimos maiores fuga, eum est consequuntur illo? Eos odio, ea
+            nemo quidem enim magni! Accusamus error rerum obcaecati deleniti
+            tempore.Lorem ipsum
+            <span class="aboutPoint">dolor sit amet consectetur</span>
+            adipisicing elit. Rem qui dignissimos maiores fuga, eum est
+            consequuntur illo? Eos odio, ea nemo quidem enim magni! Accusamus
+            error rerum obcaecati deleniti tempore.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            <span class="aboutPoint">Rem qui dignissimos maiores fuga</span>,
+            eum est consequuntur illo? Eos odio, ea nemo quidem enim magni!
+            Accusamus error rerum obcaecati deleniti tempore.
+          </p>
+          <h3 class="otherClass">其他課程</h3>
+          <nav class="classWeb">
+            <a href="#">網頁前端設計女性專班</a>
+            <a href="#">HTML網頁設計新手村</a>
+          </nav>
+        </article>
+
+        <article class="teacherList">
+          <div class="teacher">
+            <div class="teacherPhoto">
+              <img src="https://picsum.photos/300/200/?random=10" />
+            </div>
+            <div class="teacherNode">
+              <h3 class="teacherClass">HTML/CSS講師</h3>
+              <h2 class="teacherName">李建杭(Amos Lee)</h2>
+              <nav class="teacherWeb">
+                <a href="#">icon</a>
+                <a href="#">icon</a>
+                <a href="#">icon</a>
+              </nav>
+            </div>
+          </div>
+          <p class="aboutTeacher">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem qui
+            dignissimos maiores fuga, eum est consequuntur illo? Eos odio, ea
+            nemo quidem enim magni! Accusamus error rerum obcaecati deleniti
+            tempore.Lorem ipsum
+            <span class="aboutPoint">dolor sit amet consectetur</span>
+            adipisicing elit. Rem qui dignissimos maiores fuga, eum est
+            consequuntur illo? Eos odio, ea nemo quidem enim magni! Accusamus
+            error rerum obcaecati deleniti tempore.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            <span class="aboutPoint">Rem qui dignissimos maiores fuga</span>,
+            eum est consequuntur illo? Eos odio, ea nemo quidem enim magni!
+            Accusamus error rerum obcaecati deleniti tempore.
+          </p>
+          <h3 class="otherClass">其他課程</h3>
+          <nav class="classWeb">
+            <a href="#">網頁前端設計女性專班</a>
+            <a href="#">HTML網頁設計新手村</a>
+          </nav>
+        </article>
+
+        <article class="teacherList">
+          <div class="teacher">
+            <div class="teacherPhoto">
+              <img src="https://picsum.photos/300/200/?random=10" />
+            </div>
+            <div class="teacherNode">
+              <h3 class="teacherClass">HTML/CSS講師</h3>
+              <h2 class="teacherName">李建杭(Amos Lee)</h2>
+              <nav class="teacherWeb">
+                <a href="#">icon</a>
+                <a href="#">icon</a>
+                <a href="#">icon</a>
+              </nav>
+            </div>
+          </div>
+          <p class="aboutTeacher">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem qui
+            dignissimos maiores fuga, eum est consequuntur illo? Eos odio, ea
+            nemo quidem enim magni! Accusamus error rerum obcaecati deleniti
+            tempore.Lorem ipsum
+            <span class="aboutPoint">dolor sit amet consectetur</span>
+            adipisicing elit. Rem qui dignissimos maiores fuga, eum est
+            consequuntur illo? Eos odio, ea nemo quidem enim magni! Accusamus
+            error rerum obcaecati deleniti tempore.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            <span class="aboutPoint">Rem qui dignissimos maiores fuga</span>,
+            eum est consequuntur illo? Eos odio, ea nemo quidem enim magni!
+            Accusamus error rerum obcaecati deleniti tempore.
+          </p>
+          <h3 class="otherClass">其他課程</h3>
+          <nav class="classWeb">
+            <a href="#">網頁前端設計女性專班</a>
+            <a href="#">HTML網頁設計新手村</a>
+          </nav>
+        </article>
+
+        <article class="teacherList">
+          <div class="teacher">
+            <div class="teacherPhoto">
+              <img src="https://picsum.photos/300/200/?random=10" />
+            </div>
+            <div class="teacherNode">
+              <h3 class="teacherClass">HTML/CSS講師</h3>
+              <h2 class="teacherName">李建杭(Amos Lee)</h2>
+              <nav class="teacherWeb">
+                <a href="#">icon</a>
+                <a href="#">icon</a>
+                <a href="#">icon</a>
+              </nav>
+            </div>
+          </div>
+          <p class="aboutTeacher">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem qui
+            dignissimos maiores fuga, eum est consequuntur illo? Eos odio, ea
+            nemo quidem enim magni! Accusamus error rerum obcaecati deleniti
+            tempore.Lorem ipsum
+            <span class="aboutPoint">dolor sit amet consectetur</span>
+            adipisicing elit. Rem qui dignissimos maiores fuga, eum est
+            consequuntur illo? Eos odio, ea nemo quidem enim magni! Accusamus
+            error rerum obcaecati deleniti tempore.Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+            <span class="aboutPoint">Rem qui dignissimos maiores fuga</span>,
+            eum est consequuntur illo? Eos odio, ea nemo quidem enim magni!
+            Accusamus error rerum obcaecati deleniti tempore.
+          </p>
+          <h3 class="otherClass">其他課程</h3>
+          <nav class="classWeb">
+            <a href="#">網頁前端設計女性專班</a>
+            <a href="#">HTML網頁設計新手村</a>
+          </nav>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>
