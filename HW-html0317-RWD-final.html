@@ -125,7 +125,6 @@
         .teacher {
           display: flex;
           margin-right: auto;
-          align-items: center;
         }
         .tClass {
           text-align: left;
@@ -143,15 +142,20 @@
         }
         @media screen and (min-width: 980px) {
           .teacherItems {
-            display: inline-block;
-            flex-wrap: wrap;
-            text-align: center;
+            width: 100%;
+            display: flex;
           }
           .teacherlist {
             width: 45%;
-            margin: 0;
             display: inline-block;
-            justify-content: space-around;
+            margin: 10px;
+          }
+          .tPhoto {
+            display: flex;
+            justify-content: flex-start;
+          }
+          .tNode {
+            margin-left: -50px;
           }
           .classWeb {
             display: flex;
